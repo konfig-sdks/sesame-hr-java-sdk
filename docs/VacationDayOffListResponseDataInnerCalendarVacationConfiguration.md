@@ -1,0 +1,32 @@
+
+
+# VacationDayOffListResponseDataInnerCalendarVacationConfiguration
+
+
+## Properties
+
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+|**id** | **UUID** |  |  [optional] |
+|**name** | **String** |  |  [optional] |
+|**employeeRequestEnabled** | **Boolean** |  |  [optional] |
+|**needsValidation** | **Boolean** |  |  [optional] |
+|**dayType** | [**DayTypeEnum**](#DayTypeEnum) |  |  [optional] |
+|**maxDaysOff** | **Integer** |  |  [optional] |
+|**isDefault** | **Boolean** |  |  [optional] |
+|**notAllowedDateRanges** | [**List&lt;VacationConfigurationsListConfigurationsResponseDataInnerNotAllowedDateRangesInner&gt;**](VacationConfigurationsListConfigurationsResponseDataInnerNotAllowedDateRangesInner.md) |  |  [optional] |
+|**createdAt** | **String** |  |  [optional] |
+|**updatedAt** | **String** |  |  [optional] |
+|**createdBy** | **UUID** |  |  [optional] |
+
+
+
+## Enum: DayTypeEnum
+
+| Name | Value |
+|---- | -----|
+| BUSINESS_DAY | &quot;business_day&quot; |
+| CALENDAR_DAY | &quot;calendar_day&quot; |
+
+
+

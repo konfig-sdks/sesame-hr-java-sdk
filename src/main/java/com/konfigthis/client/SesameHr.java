@@ -1,0 +1,126 @@
+package com.konfigthis.client;
+
+import com.konfigthis.client.api.AbsenceCalendarsApi;
+import com.konfigthis.client.api.AbsenceDayOffApi;
+import com.konfigthis.client.api.AbsenceDayOffRequestsApi;
+import com.konfigthis.client.api.AbsenceTypesApi;
+import com.konfigthis.client.api.AgreementsApi;
+import com.konfigthis.client.api.CheckTypesApi;
+import com.konfigthis.client.api.CheckValidationApi;
+import com.konfigthis.client.api.CompanyApi;
+import com.konfigthis.client.api.ContractsApi;
+import com.konfigthis.client.api.CustomFieldsApi;
+import com.konfigthis.client.api.CustomersApi;
+import com.konfigthis.client.api.DepartmentsApi;
+import com.konfigthis.client.api.DocumentsApi;
+import com.konfigthis.client.api.EmployeeAgreementsApi;
+import com.konfigthis.client.api.EmployeeAssignationsRolesApi;
+import com.konfigthis.client.api.EmployeeDepartmentAssignationsApi;
+import com.konfigthis.client.api.EmployeeManagersApi;
+import com.konfigthis.client.api.EmployeeOfficeAssignationsApi;
+import com.konfigthis.client.api.EmployeeScheduleTemplatesApi;
+import com.konfigthis.client.api.EmployeesApi;
+import com.konfigthis.client.api.HolidayCalendarsApi;
+import com.konfigthis.client.api.HolidaysApi;
+import com.konfigthis.client.api.OfficesApi;
+import com.konfigthis.client.api.ProjectsApi;
+import com.konfigthis.client.api.RecruitmentApi;
+import com.konfigthis.client.api.RolesApi;
+import com.konfigthis.client.api.SalariesApi;
+import com.konfigthis.client.api.ScheduleTemplatesApi;
+import com.konfigthis.client.api.SecurityApi;
+import com.konfigthis.client.api.StatisticsApi;
+import com.konfigthis.client.api.TimeEntriesApi;
+import com.konfigthis.client.api.VacationCalendarsApi;
+import com.konfigthis.client.api.VacationConfigurationsApi;
+import com.konfigthis.client.api.VacationDayOffApi;
+import com.konfigthis.client.api.VacationDayOffRequestsApi;
+import com.konfigthis.client.api.WorkBreaksApi;
+import com.konfigthis.client.api.WorkEntriesApi;
+
+public class SesameHr {
+    private ApiClient apiClient;
+    public final AbsenceCalendarsApi absenceCalendars;
+    public final AbsenceDayOffApi absenceDayOff;
+    public final AbsenceDayOffRequestsApi absenceDayOffRequests;
+    public final AbsenceTypesApi absenceTypes;
+    public final AgreementsApi agreements;
+    public final CheckTypesApi checkTypes;
+    public final CheckValidationApi checkValidation;
+    public final CompanyApi company;
+    public final ContractsApi contracts;
+    public final CustomFieldsApi customFields;
+    public final CustomersApi customers;
+    public final DepartmentsApi departments;
+    public final DocumentsApi documents;
+    public final EmployeeAgreementsApi employeeAgreements;
+    public final EmployeeAssignationsRolesApi employeeAssignationsRoles;
+    public final EmployeeDepartmentAssignationsApi employeeDepartmentAssignations;
+    public final EmployeeManagersApi employeeManagers;
+    public final EmployeeOfficeAssignationsApi employeeOfficeAssignations;
+    public final EmployeeScheduleTemplatesApi employeeScheduleTemplates;
+    public final EmployeesApi employees;
+    public final HolidayCalendarsApi holidayCalendars;
+    public final HolidaysApi holidays;
+    public final OfficesApi offices;
+    public final ProjectsApi projects;
+    public final RecruitmentApi recruitment;
+    public final RolesApi roles;
+    public final SalariesApi salaries;
+    public final ScheduleTemplatesApi scheduleTemplates;
+    public final SecurityApi security;
+    public final StatisticsApi statistics;
+    public final TimeEntriesApi timeEntries;
+    public final VacationCalendarsApi vacationCalendars;
+    public final VacationConfigurationsApi vacationConfigurations;
+    public final VacationDayOffApi vacationDayOff;
+    public final VacationDayOffRequestsApi vacationDayOffRequests;
+    public final WorkBreaksApi workBreaks;
+    public final WorkEntriesApi workEntries;
+
+    public SesameHr() {
+        this(null);
+    }
+
+    public SesameHr(Configuration configuration) {
+        this.apiClient = new ApiClient(null, configuration);
+        this.absenceCalendars = new AbsenceCalendarsApi(this.apiClient);
+        this.absenceDayOff = new AbsenceDayOffApi(this.apiClient);
+        this.absenceDayOffRequests = new AbsenceDayOffRequestsApi(this.apiClient);
+        this.absenceTypes = new AbsenceTypesApi(this.apiClient);
+        this.agreements = new AgreementsApi(this.apiClient);
+        this.checkTypes = new CheckTypesApi(this.apiClient);
+        this.checkValidation = new CheckValidationApi(this.apiClient);
+        this.company = new CompanyApi(this.apiClient);
+        this.contracts = new ContractsApi(this.apiClient);
+        this.customFields = new CustomFieldsApi(this.apiClient);
+        this.customers = new CustomersApi(this.apiClient);
+        this.departments = new DepartmentsApi(this.apiClient);
+        this.documents = new DocumentsApi(this.apiClient);
+        this.employeeAgreements = new EmployeeAgreementsApi(this.apiClient);
+        this.employeeAssignationsRoles = new EmployeeAssignationsRolesApi(this.apiClient);
+        this.employeeDepartmentAssignations = new EmployeeDepartmentAssignationsApi(this.apiClient);
+        this.employeeManagers = new EmployeeManagersApi(this.apiClient);
+        this.employeeOfficeAssignations = new EmployeeOfficeAssignationsApi(this.apiClient);
+        this.employeeScheduleTemplates = new EmployeeScheduleTemplatesApi(this.apiClient);
+        this.employees = new EmployeesApi(this.apiClient);
+        this.holidayCalendars = new HolidayCalendarsApi(this.apiClient);
+        this.holidays = new HolidaysApi(this.apiClient);
+        this.offices = new OfficesApi(this.apiClient);
+        this.projects = new ProjectsApi(this.apiClient);
+        this.recruitment = new RecruitmentApi(this.apiClient);
+        this.roles = new RolesApi(this.apiClient);
+        this.salaries = new SalariesApi(this.apiClient);
+        this.scheduleTemplates = new ScheduleTemplatesApi(this.apiClient);
+        this.security = new SecurityApi(this.apiClient);
+        this.statistics = new StatisticsApi(this.apiClient);
+        this.timeEntries = new TimeEntriesApi(this.apiClient);
+        this.vacationCalendars = new VacationCalendarsApi(this.apiClient);
+        this.vacationConfigurations = new VacationConfigurationsApi(this.apiClient);
+        this.vacationDayOff = new VacationDayOffApi(this.apiClient);
+        this.vacationDayOffRequests = new VacationDayOffRequestsApi(this.apiClient);
+        this.workBreaks = new WorkBreaksApi(this.apiClient);
+        this.workEntries = new WorkEntriesApi(this.apiClient);
+    }
+
+}
